@@ -48,8 +48,8 @@ if old_ip != ip:
     msg = MIMEMultipart()
     msg['From'] = username
     # You edit next two lines only
-    RecipientID = 'nikolal@disroot.org' 
-    Recipient = 'nikola@lakic.one'
+    RecipientID = 'example1@email.com' 
+    Recipient = 'example1@email.com'
     msg['To'] = Recipient
     msg['Subject'] = 'Raspberry Pi IP changed!'
     mailbody = ('New IP of raspberry is: {}').format(ip)
