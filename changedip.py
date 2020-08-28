@@ -51,8 +51,8 @@ if old_ip != ip:
     RecipientID = 'example1@email.com' 
     Recipient = 'example1@email.com'
     msg['To'] = Recipient
-    msg['Subject'] = 'Raspberry Pi IP changed!'
-    mailbody = ('New IP of raspberry is: {}').format(ip)
+    msg['Subject'] = 'Device IP address changed!!'
+    mailbody = (f'New IP of device is: {ip} , this message will repeat itself in time depending of configured cronjob if you don't change old_ip variable!')
     secretmessage = (str(gpg.encrypt(mailbody, RecipientID, always_trust=True)))
     msg.attach(MIMEText(secretmessage, 'plain'))
     smtpObj = smtplib.SMTP(server, 587)
