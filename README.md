@@ -21,7 +21,7 @@ Python script for automated response when public IP address changes of device ru
 
 You begin with entering your credentials for email account you want to use to send email, and you must have public key in your gnupg keyring for encryption of mail to recipient you want to send to.
 
-Just edit line  __13__ and lines __49__ and __50__, you will see explanation for them in code.
+Just edit line  __16__ and lines __51__ and __52__, you will see explanation for them in code.
 
 Script recognises some servers with smtp protocol and will automatically set correct one (if its listed) when sending email.
 
